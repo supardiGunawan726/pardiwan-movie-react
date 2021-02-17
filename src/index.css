@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary;
+}
+
+.noscroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+}
+
+.fluid {
+  position: relative;
+  padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  height: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "my first blog",
+      "body": "why do we use it?\nit is a long story haha anjay lah gua capek",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "njay",
+      "body": "njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay njir njay ",
+      "author": "Mario",
+      "id": 2
+    }
+  ]
+}
