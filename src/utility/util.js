@@ -19,11 +19,11 @@ export const topMovieUrl = (page) => {
 };
 
 export const popularTvUrl = (page) => {
-  return `http://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&page=${page}&language=EN`;
+  return `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&page=${page}&language=EN`;
 };
 
 export const topTvUrl = (page) => {
-  return `http://api.themoviedb.org/3/tv/top_rated?api_key=${API_KEY}&page=${page}&language=EN`;
+  return `https://api.themoviedb.org/3/tv/top_rated?api_key=${API_KEY}&page=${page}&language=EN`;
 };
 
 export const movieByGenreUrl = (id, page) => {
@@ -31,15 +31,15 @@ export const movieByGenreUrl = (id, page) => {
 };
 
 export const searchMovieUrl = (query) => {
-  return `http://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`;
+  return `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`;
 };
 
 export const movieDetailUrl = (id) => {
-  return `http://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=EN&append_to_response=credits,videos,similar`;
+  return `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=EN&append_to_response=credits,videos,similar`;
 };
 
 export const tvDetailUrl = (id) => {
-  return `http://api.themoviedb.org/3/tv/${id}?api_key=${API_KEY}&language=EN&append_to_response=credits,videos,similar`;
+  return `https://api.themoviedb.org/3/tv/${id}?api_key=${API_KEY}&language=EN&append_to_response=credits,videos,similar`;
 };
 
 export const getTrailerUrl = (id) => {
