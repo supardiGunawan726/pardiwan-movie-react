@@ -1,21 +1,21 @@
 export const API_KEY = "e62cdc9b39cf5a494cabbe03b680f81b";
 
-export const genresUrl = `http://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}`;
+export const genresUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}`;
 
 export const getMovieImageUrl = (path, quality = "original") => {
   return `https://image.tmdb.org/t/p/${quality}${path}`;
 };
 
 export const popularMovieUrl = (page) => {
-  return `http://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&page=${page}&language=EN`;
+  return `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&page=${page}&language=EN`;
 };
 
 export const upcomingMovieUrl = (page) => {
-  return `http://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&page=${page}&language=EN`;
+  return `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&page=${page}&language=EN`;
 };
 
 export const topMovieUrl = (page) => {
-  return `http://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&page=${page}&language=EN`;
+  return `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&page=${page}&language=EN`;
 };
 
 export const popularTvUrl = (page) => {
