@@ -96,7 +96,7 @@ const SearchMovie = () => {
               </div>
             )}
           </div>
-          <div className="col-span-4">
+          <div className="col-span-4 rounded-xl bg-primaryLight mt-4 lg:mt-0 p-2">
             <h2 className="text-white font-bold">Top Rated Movies</h2>
             {topMovies && (
               <div>

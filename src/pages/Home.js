@@ -84,7 +84,7 @@ const Home = () => {
           </Helmet>
 
           <div className="w-full col-span-9">
-            <div className="grid grid-cols-12 xgap-4 gap-4 w-full h-40 md:h-72 xl:h-80 2xl:h-96">
+            <div className="grid grid-cols-12 h-40 md:h-64 lg:h-72 xl:h-auto gap-4 w-full">
               <div className="col-span-12 xl:col-span-8 p-1 bg-primaryLight rounded-xl">
                 {mostPopularMovie && (
                   <Poster
@@ -117,7 +117,7 @@ const Home = () => {
                 </div>
               )}
             </div>
-            <div className="w-full bg-primaryLight rounded-xl mt-4 px-4 py-2 ring-1 ring-gray-800">
+            <div className="w-full bg-primaryLight rounded-xl px-4 py-2 ring-1 ring-gray-800 mt-4">
               <div className="flex items-center justify-between">
                 <h2 className="font-bold text-white tracking-wider">
                   Popular Movies
@@ -161,7 +161,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-span-3">
-            <div className="w-full bg-primaryLight rounded-xl px-4 py-2 ring-1 ring-gray-800">
+            <div className="w-full bg-primaryLight rounded-xl px-4 py-2 ring-1 ring-gray-800 mt-4 lg:mt-0">
               <div className="flex items-center justify-between">
                 <h2 className="font-bold text-white tracking-wider">
                   Upcoming Movies

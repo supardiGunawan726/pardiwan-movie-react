@@ -114,7 +114,10 @@ const DetailMovie = () => {
                   </div>
                   <div className="flex gap-4 flex-wrap items-center justify-center w-full my-4 lg:justify-start">
                     {movie.genres.map((genre) => (
-                      <p className="bg-gray-600 text-gray-200 px-2 py-1 pb-2  leading-none rounded">
+                      <p
+                        className="bg-gray-600 text-gray-200 px-2 py-1 pb-2  leading-none rounded"
+                        key={genre.id}
+                      >
                         {genre.name}
                       </p>
                     ))}
@@ -141,7 +144,7 @@ const DetailMovie = () => {
             </div>
           </div>
           <div className="w-full col-span-3">
-            <div className="rounded-xl px-4 py-2 overflow-hidden bg-primaryLight">
+            <div className="rounded-xl px-4 py-2 overflow-hidden bg-primaryLight mt-4 lg:mt-0">
               <div className="flex items-center justify-between">
                 <h2 className="font-bold text-white tracking-wider">
                   Popular Movies
