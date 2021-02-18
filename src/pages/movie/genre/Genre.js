@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   Link,
   useHistory,
@@ -36,6 +37,12 @@ const Genre = () => {
 
   return (
     <section>
+      {genre && (
+        <Helmet>
+          <title>Pardiwan Movie Updates | {genre}</title>
+        </Helmet>
+      )}
+
       <h2 className="w-full text-center text-white text-lg font-bold capitalize">
         {genre && genre + " movies"}
       </h2>

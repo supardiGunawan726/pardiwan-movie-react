@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Grid from "../../components/Grid";
 import { popularTvUrl, topTvUrl } from "../../utility/util";
@@ -48,6 +49,10 @@ const Tv = () => {
 
       {!isError && !isPending && (
         <section>
+          <Helmet>
+            <title>Pardiwan Movie Updates | TV Series</title>
+          </Helmet>
+
           <div className="w-full bg-primaryLight rounded-xl mt-4 px-4 py-2 ring-1 ring-gray-800">
             <div className="flex items-center justify-between">
               <h2 className="font-bold text-white tracking-wider">

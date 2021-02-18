@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Grid from "../components/Grid";
 import List from "../components/List";
@@ -78,6 +79,10 @@ const Home = () => {
       {/* loading completed */}
       {!isPending && !isError && (
         <div className="w-full lg:grid grid-cols-12 gap-4">
+          <Helmet>
+            <title>Pardiwan Movie Updates | Home</title>
+          </Helmet>
+
           <div className="w-full col-span-9">
             <div className="grid grid-cols-12 xgap-4 gap-4 w-full h-40 md:h-72 xl:h-80 2xl:h-96">
               <div className="col-span-12 xl:col-span-8 p-1 bg-primaryLight rounded-xl">

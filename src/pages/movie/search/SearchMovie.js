@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   Link,
   useHistory,
@@ -59,6 +60,10 @@ const SearchMovie = () => {
       {/* loading completed */}
       {!isPending && !isError && (
         <section className="w-full lg:grid grid-cols-12 gap-6">
+          <Helmet>
+            <title>Pardiwan Movie Updates | {query}</title>
+          </Helmet>
+
           <div className="col-span-8">
             <h2 className="text-white font-bold">Search : {query}</h2>
             {movies && !isPending && !isError && (

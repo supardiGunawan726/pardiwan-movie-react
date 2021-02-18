@@ -9,6 +9,7 @@ import PopularMovie from "./pages/movie/popular/PopularMovie";
 import SearchMovie from "./pages/movie/search/SearchMovie";
 import TopMovie from "./pages/movie/top/TopMovie";
 import UpcomingMovie from "./pages/movie/upcoming/UpcomingMovie";
+import NotFound from "./pages/NotFound";
 import DetailTv from "./pages/tv/Detail";
 import PopularTv from "./pages/tv/popular/PopularTv";
 import TopTv from "./pages/tv/top/TopTv";
@@ -38,6 +39,7 @@ function App() {
             <Route path="/tv/:id" exact component={DetailTv} />
             <Route path="/tv/top/:page" exact component={TopTv} />
             <Route path="/tv/popular/:page" exact component={PopularTv} />
+            <Route path="*" exact component={NotFound} />
           </Switch>
         </div>
         <Footer />

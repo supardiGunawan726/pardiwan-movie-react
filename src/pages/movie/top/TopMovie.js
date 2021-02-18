@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   Link,
   useHistory,
@@ -25,6 +26,10 @@ const TopMovie = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>Pardiwan Movie Updates | Top Rated Movies</title>
+      </Helmet>
+
       <h2 className="w-full text-center text-white text-lg font-bold  bg-primaryLight rounded-xl py-2 ring-1 ring-gray-800">
         Top Rated Movies
       </h2>

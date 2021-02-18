@@ -13,6 +13,7 @@ import {
   popularMovieUrl,
 } from "../../utility/util";
 import Grid from "../../components/Grid";
+import { Helmet } from "react-helmet";
 
 const DetailMovie = () => {
   const [movie, setMovie] = useState(null);
@@ -68,6 +69,10 @@ const DetailMovie = () => {
       {/* loading completed */}
       {!isPending && !isError && movie && (
         <section className="w-full lg:grid grid-cols-12 gap-4">
+          <Helmet>
+            <title>Pardiwan Movie Updates | {movie.name}</title>
+          </Helmet>
+
           <div className="w-full col-span-9">
             {movie.videos.results[0] && (
               <div className="fluid rounded-xl overflow-hidden">
